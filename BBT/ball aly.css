@@ -1,0 +1,80 @@
+.mail{
+    color: tan;
+}
+
+.subtitle{
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-size: 30px;
+    line-height: 0%;
+    
+}
+
+
+.hr{
+    line-height: 0%;
+    border: none;
+    height: 4px;
+    background-color: tan;
+    width: 100%;
+    
+}
+
+
+body
+{
+font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+
+h1,h3{
+    font-family: "Economica", sans-serif;
+}
+
+h1 
+{
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 20%;
+    margin-bottom: 30px;
+}
+
+
+h2 
+{
+    line-height: 70%;
+
+}
+
+h4 
+{
+    color: tan;
+    font-style: italic;
+    font-variant: small-caps;
+    font-size: 20px;
+    line-height: 100%;
+
+}
+
+
+button
+{
+    border-style:solid;
+    border-radius: 14%;
+    border-color: gray;
+    background-color: white;
+    color: black;
+
+}
+
+
+div
+{
+    padding-left: 25px;
+
+}

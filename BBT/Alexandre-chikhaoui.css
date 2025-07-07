@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: blue;
+  color: #000000;
+}
+
+.cv-container {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar {
+  width: 35%;
+  background-color: rgb(117, 144, 95); 
+  color: #fff;
+  padding: 30px;
+}
+
+.sidebar h1 {
+  font-size: 26px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.sidebar h2 {
+  font-size: 16px;
+  border-bottom: 1px solid #ffffff;
+  margin-top: 20px;
+  padding-bottom: 5px;
+}
+
+.sidebar p, .sidebar ul {
+  font-size: 14px;
+  margin: 8px 0;
+}
+
+.sidebar ul {
+  padding-left: 18px;
+}
+
+.content {
+  width: 65%;
+  padding: 40px;
+}
+
+.content h2 {
+  font-size: 20px;
+  color: #e8f3e8;
+  border-bottom: 2px solid #000000;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.job {
+  margin-bottom: 25px;
+}
+
+.job h3 {
+  font-size: 16px;
+  margin-bottom: 4px;
+  color: #333;
+}
+
+.job .date {
+  font-size: 13px;
+  color: #000000;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.job ul {
+  padding-left: 20px;
+  margin: 0;
+}
+
+.job li {
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.experience {
+    color: #000000;
+}

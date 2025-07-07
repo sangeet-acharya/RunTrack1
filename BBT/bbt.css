@@ -1,0 +1,80 @@
+
+.class1 {
+    background-color: #e2d3a6;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 5%;
+}
+.circle {
+   width: 120px;
+  height: 120px;
+  border-radius: 100%;
+  background-size: cover;
+  background-position: center;
+  
+  
+}
+.circle1{
+  background-image: url('img1.jpg');
+
+}
+.circle2{
+  background-image: url('img2.jpg');
+
+}
+.circle3{
+background-image: url('img3.jpg');
+}
+.circle4 {
+background-image: url('img4.jpg');
+}
+.circle5{
+background-image: url('img5.jpg');
+}
+.circle6{
+background-image: url('img5.jpg');
+}
+.name {      
+    display: flex;
+     flex-direction: column;
+     align-items: center;
+     font-size: 16px;
+     text-decoration: none;
+
+    }
+    
+h2  {
+    font-size: 24px;
+    margin-top: 20px;
+    color: #333;
+    padding-top: 20px;
+}
+a {
+    text-decoration: none;
+    color: #333;
+}
+h1{
+  background-color: white;
+  color:#333 ;  
+}
+@media screen and (min-width:768px) {
+  .container {
+    flex-direction: row;
+
+}
+}
+@media screen and (min-width:993px) {
+  
+}
+
+  

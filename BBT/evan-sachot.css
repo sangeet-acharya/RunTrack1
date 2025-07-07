@@ -1,0 +1,56 @@
+body{
+    font-family: "Economica", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-left: 10%;
+  margin-right: 5%;
+}
+#mail {
+    color: tan;
+}
+#profe{
+    color:rgba(87, 82, 82, 0.587)
+}
+
+.ligne{
+    height: 5px;
+    background-color: tan;
+    border: none;
+}
+li{
+ margin: 5px;
+}
+
+h1{
+  margin-top: 5%;
+  font-family: "Economica", sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 30px;
+}
+.formation {
+ font-family: "Economica", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 30px;
+  line-height: none;
+  letter-spacing: 1px;
+
+}
+.ligne2 {
+    margin-bottom: 10%;
+    height: 5px;
+    background-color: tan;
+    border: none;
+}
+.button{
+  color: white;
+  text-align: center;
+  border: 1px;
+  text-decoration: none;
+  background-color: grey;
+  padding: 5px;
+}
+.button:hover{
+  text-decoration: underline;
+}
