@@ -1,0 +1,401 @@
+* {
+  box-sizing: border-box;
+  /* border: 1px solid red; */
+}
+
+main {
+  width: 80%;
+  margin: auto;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  font-family: Helvetica;
+}
+
+/* header ici */
+:root {
+  /* base couleur*/
+  --clr-bg-main: #f4f6fb;
+  --clr-primary: hsl(
+    210,
+    84%,
+    50%
+  ); /*couleur principale (boutons, titres...) */
+  --clr-primary-dark: #00386e;
+  --clr-text: #0e0d0d;
+  --clr-light: #fff; /* blanc (titres, liens...) */
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav .liste {
+  position: relative;
+}
+
+/* La sous-liste est cachée au départ */
+nav .menu-deroulant {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: var(--clr-primary);
+  padding: 0.5rem 0;
+  border-radius: 0 0 6px 6px;
+  min-width: 200px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+  list-style: none;
+}
+
+/* Les liens de la sous-liste */
+nav .menu-deroulant li a {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: var(--clr-light);
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+nav .menu-deroulant li a:hover {
+  background-color: var(--clr-primary-dark);
+} /* fond devient foncé quand la souris survole 
+le nom de la formation*/
+/* Affiche la sous-liste quand on survole "Formations" */
+/* la sous‑liste à l’intérieur de <li class="liste"> 
+quand cet élément est survolé */
+/*• .liste → on vise le <li class="liste">.
+• :hover → quand la souris est dessus.*/
+nav .liste:hover .menu-deroulant,
+nav .liste:focus-within .menu-deroulant {
+  display: block;
+}
+
+/* — Bandeau + coins arrondis — */
+.hero-banner {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* banière principale + news du jour + actu */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 3rem;
+}
+
+.logo_plateforme {
+  position: absolute;
+  left: 1rem;
+  width: 65px;
+  height: auto;
+}
+
+/* Titre centré */
+.site-title {
+  margin: 0 auto;
+  font-size: 1.8rem;
+  color: var(--clr-light);
+}
+
+/*header : fond et couleur du texte de l’en-tête avec un peu de marge intérieure*/
+header {
+  background: var(--clr-primary);
+  color: var(--clr-light);
+  padding: 3rem;
+}
+
+/*header h1 : titre centré avec taille et marge en dessous */
+header h1 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+/* Navigation principale */
+nav ul {
+  /* organiser les liens de navigation en liste propre et structurée. */
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+  justify-content: center;
+}
+
+/* code définit l’apparence des liens dans la navigation*/
+nav a {
+  color: var(--clr-light);
+  text-decoration: none;
+  font-weight: 600;
+  padding-bottom: 0.2rem;
+  transition: border-color 0.3s;
+}
+
+/*style s’applique quand on passe la souris sur un lien(bordure..)  */
+nav a:hover,
+nav a:focus-visible {
+  border-bottom: 2px solid var(--clr-light);
+  outline: none;
+}
+
+/* jusqu'ici header*/
+
+/* footer ici */
+.container-footer {
+  background-color: rgb(51, 50, 50);
+  display: flex;
+  justify-content: space-between;
+  padding: 6%;
+}
+.logo-footer {
+  width: 280px;
+}
+.logo-header {
+  width: 20%;
+  margin-right: 700px;
+}
+.reseaux-footer {
+  margin: 10%;
+}
+i {
+  color: white;
+  margin: 1%;
+}
+.button-blanc {
+  margin-top: 8%;
+  padding: 2%;
+  padding-right: 11%;
+  padding-left: 11%;
+  font-weight: 600;
+  border: none;
+}
+.button-equipe {
+  text-decoration: none;
+  color: black;
+}
+.button-red {
+  background-color: #e74a34;
+  padding: 2%;
+  padding-right: 10%;
+  padding-left: 10%;
+  margin-top: 5%;
+  border: none;
+  font-weight: 600;
+}
+.button-footer {
+  text-decoration: none;
+  color: white;
+}
+.lien-plateforme {
+  gap: 5px;
+}
+.a-plateforme {
+  text-decoration: none;
+  color: white;
+  margin-bottom: 10px;
+}
+footer ul li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+.a-qsn {
+  text-decoration: none;
+  color: white;
+}
+.h4-footer {
+  color: white;
+  margin-bottom: 10%;
+}
+.p-footer {
+  color: white;
+  margin-bottom: 5%;
+}
+.button-contact {
+  margin-top: 8%;
+  padding: 2%;
+  padding-right: 11%;
+  padding-left: 11%;
+  font-size: larger;
+  background-color: #333232;
+  border: 2px solid;
+  color: white;
+}
+.contact-lien {
+  text-decoration: none;
+  color: white;
+}
+.logo-april {
+  margin-top: 20%;
+  width: 50%;
+}
+.footer-noir {
+  background-color: #000000;
+  color: #e9e9e9;
+  padding: 1%;
+  font-size: 0.8em;
+}
+/* footer jusqu'ici */
+
+.info {
+  display: flex;
+  font-size: 22px;
+  padding: 10px 10px 10px;
+  column-gap: 10px;
+  margin: auto;
+  background-position: 50%;
+  flex-direction: column;
+  font-size: 18px;
+  margin-top: 5%;
+}
+.intro {
+  display: flex;
+}
+
+.justify-center {
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.gap-30 {
+  gap: 30px;
+}
+.container-flex {
+  display: flex;
+  padding: 10px;
+}
+
+.logos {
+  height: 80px;
+  max-width: 130px;
+  object-fit: contain;
+}
+
+.text {
+  display: flex;
+  font-size: clamp(10px, 5vw, 24px);
+  justify-content: space-between;
+}
+figure img {
+  width: 250px;
+  object-fit: contain;
+}
+
+figure {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 0;
+  width: 49%;
+  align-items: center;
+}
+
+figcaption p {
+  font-size: 15px;
+}
+
+.video {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.video1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: baseline;
+  margin: 15px;
+  width: 30%;
+}
+.align {
+  vertical-align: text-top;
+  font-size: 0.67em;
+}
+/* header footer {
+  width: 100%;
+} */
+
+iframe {
+  width: 100%;
+}
+/* responsive  */
+@media screen and (max-width: 768px) {
+  body {
+    width: 100%;
+  }
+  .navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+  .navbar ul {
+    padding: 0;
+  }
+  .intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 20px;
+  }
+  .info h2 {
+    text-align: center;
+  }
+  .marque {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+  .text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+  .certif h2 {
+    text-align: center;
+  }
+  .fig-certif {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
+  .fig-certif p {
+    font-size: 20px;
+  }
+  .video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .video1 {
+    width: 100%;
+  }
+  .container-footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+}

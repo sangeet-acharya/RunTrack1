@@ -1,0 +1,650 @@
+:root {
+  --clr-bg-main: #f4f6fb;
+  --clr-primary: #1476d8;
+  --clr-primary-dark: #00386e;
+  --clr-text: #231e1e;
+  --clr-light: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  background: var(--clr-bg-main);
+  color: var(--clr-text);
+  line-height: 1.6;
+}
+
+/* header ici */
+:root {
+  /* base couleur*/
+  --clr-bg-main: #f4f6fb;
+  --clr-primary: hsl(
+    210,
+    84%,
+    50%
+  ); /* couleur principale (boutons, titres...) */
+  --clr-primary-dark: #00386e;
+  --clr-text: #0e0d0d;
+  --clr-light: #fff; /* blanc (titres, liens...) */
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav .liste {
+  position: relative;
+}
+
+/* La sous-liste est cachée au départ */
+nav .menu-deroulant {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: var(--clr-primary);
+  padding: 0.5rem 0;
+  border-radius: 0 0 6px 6px;
+  min-width: 200px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+  list-style: none;
+}
+
+/* Les liens de la sous-liste */
+nav .menu-deroulant li a {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: var(--clr-light);
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+nav .menu-deroulant li a:hover {
+  background-color: var(--clr-primary-dark);
+} /* fond devient foncé quand la souris survole le nom de la formation*/
+
+/* Affiche la sous-liste quand on survole "Formations" */
+/* la sous‑liste à l’intérieur de <li class="liste"> quand cet élément est survolé */
+/*• .liste → on vise le <li class="liste">.
+• :hover → quand la souris est dessus.*/
+nav .liste:hover .menu-deroulant,
+nav .liste:focus-within .menu-deroulant {
+  display: block;
+}
+
+/* — Bandeau + coins arrondis — */
+.hero-banner {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* banière principale + news du jour + actu */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 3rem;
+}
+
+.logo_plateforme {
+  position: absolute;
+  left: 1rem;
+  width: 65px;
+  height: auto;
+}
+
+/* Titre centré */
+.site-title {
+  margin: 0 auto;
+  font-size: 1.8rem;
+  color: var(--clr-light);
+}
+
+/*header : fond et couleur du texte de l’en-tête avec un peu de marge intérieure*/
+header {
+  background: var(--clr-primary);
+  color: var(--clr-light);
+  padding: 3rem;
+}
+
+/*header h1 : titre centré avec taille et marge en dessous */
+header h1 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+/* Navigation principale */
+nav ul {
+  /* organiser les liens de navigation en liste propre et structurée. */
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+  justify-content: center;
+}
+
+/* code définit l’apparence des liens dans la navigation*/
+nav a {
+  color: var(--clr-light);
+  text-decoration: none;
+  font-weight: 600;
+  padding-bottom: 0.2rem;
+  transition: border-color 0.3s;
+}
+
+/*style s’applique quand on passe la souris sur un lien(bordure..)  */
+nav a:hover,
+nav a:focus-visible {
+  border-bottom: 2px solid var(--clr-light);
+  outline: none;
+}
+
+/* jusqu'ici header*/
+
+/* footer ici */
+.container-footer {
+  background-color: rgb(51, 50, 50);
+  display: flex;
+  justify-content: space-between;
+  padding: 6%;
+}
+.logo-footer {
+  width: 280px;
+}
+.logo-header {
+  width: 20%;
+  margin-right: 700px;
+}
+.reseaux-footer {
+  margin: 10%;
+}
+i {
+  color: white;
+  margin: 1%;
+}
+.button-blanc {
+  margin-top: 8%;
+  padding: 2%;
+  padding-right: 11%;
+  padding-left: 11%;
+  font-weight: 600;
+  border: none;
+}
+.button-equipe {
+  text-decoration: none;
+  color: black;
+}
+.button-red {
+  background-color: #e74a34;
+  padding: 2%;
+  padding-right: 10%;
+  padding-left: 10%;
+  margin-top: 5%;
+  border: none;
+  font-weight: 600;
+}
+.button-footer {
+  text-decoration: none;
+  color: white;
+}
+.lien-plateforme {
+  gap: 5px;
+}
+.a-plateforme {
+  text-decoration: none;
+  color: white;
+  margin-bottom: 10px;
+}
+footer ul li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+.a-qsn {
+  text-decoration: none;
+  color: white;
+}
+.h4-footer {
+  color: white;
+  margin-bottom: 10%;
+}
+.p-footer {
+  color: white;
+  margin-bottom: 5%;
+}
+.button-contact {
+  margin-top: 8%;
+  padding: 2%;
+  padding-right: 11%;
+  padding-left: 11%;
+  font-size: larger;
+  background-color: #333232;
+  border: 2px solid;
+  color: white;
+}
+.contact-lien {
+  text-decoration: none;
+  color: white;
+}
+.logo-april {
+  margin-top: 20%;
+  width: 50%;
+}
+.footer-noir {
+  background-color: #000000;
+  color: #e9e9e9;
+  padding: 1%;
+  font-size: 0.8em;
+}
+/* footer jusqu'ici */
+.site-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.hero-banner {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.slider {
+  display: flex;
+  width: 300%;
+  height: 100%;
+  animation: slide 15s linear infinite;
+}
+
+.slide {
+  min-width: auto;
+  height: auto;
+}
+
+.slide img {
+  width: 150%;
+  height: 200%;
+  object-fit: cover;
+  display: block;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  /* 33%  { transform:translateX(-100%); }
+    66%  { transform:translateX(-200%); } */
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(75, 74, 74, 0.4);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(248, 250, 254);
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+main {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+main {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  text-align: center;
+  color: var(--clr-primary);
+}
+
+.hero {
+  background-image: url("codage.jpg"); /* le nom exact de ton image */
+  background-size: cover; /* pour que l'image remplisse tout l'espace */
+  background-position: center; /* pour centrer l'image */
+  background-repeat: no-repeat;
+  background-color: var(--clr-primary);
+  text-align: center; /* centrer le texte */
+  padding: 100px 20px; /* espace autour du texte (haut/bas + côtés) */
+}
+.hero img {
+  width: 100%;
+  margin-top: 1rem;
+  border-radius: 8px;
+}
+
+.hero {
+  background-image: url("Images/codage.jpg"); /* chemin vers l’image */
+  background-size: cover; /* l’image couvre toute la section */
+  background-position: center; /* centrage */
+  text-align: center; /* centrer le texte */
+  padding: 100px 20px; /* espace autour du texte */
+}
+
+.hero h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+.h3-programmes {
+  margin-top: 20px;
+}
+.hero p {
+  font-size: 1.2em;
+}
+
+.formations-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem auto;
+  max-width: 1200px;
+  padding: 0 1rem;
+  display: flex;
+}
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.card h3 {
+  margin-top: 0;
+  color: #003366;
+}
+
+.card p {
+  font-size: 0.95em;
+}
+
+.hero {
+  background-color: var(--clr-primary);
+  color: var(--clr-light);
+  text-align: center;
+  padding: 3rem 1rem;
+  border-radius: 8px;
+}
+
+.hero h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+.themes {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 2rem auto;
+  flex-wrap: wrap; /* pour que ça passe bien sur mobile */
+}
+
+.theme {
+  text-align: center;
+}
+
+.theme img {
+  width: 100px; /* ajuste selon la taille souhaitée */
+  height: auto;
+  margin-bottom: 0.5rem;
+}
+
+.theme h3 {
+  color: var(--clr-light); /* texte blanc */
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+section {
+  margin-top: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+section h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: var(--clr-primary);
+}
+
+.texte {
+  max-width: 800px;
+  margin: 0 auto 1rem;
+  text-align: center;
+}
+.bande-image {
+  width: 10%; /* prend toute la largeur */
+  height: 10px; /* faible hauteur */
+  background-image: url("Images/logo_partenaires.png"); /* adapte le chemin si besoin */
+  background-size: cover; /* couvre tout l’espace */
+  background-position: center; /* centré */
+  background-repeat: no-repeat; /* pas de répétition */
+}
+
+.h7 {
+  font-weight: bold;
+}
+
+.testimonials {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.testimonials h3 {
+  font-size: 1.8rem;
+  color: var(--clr-primary);
+  margin-bottom: 2rem;
+}
+
+.testimonial-circles {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap; /* pour que ça s'adapte sur mobile */
+}
+
+.testimonial-circle {
+  width: 160px;
+  height: 160px;
+  background-color: var(--clr-light);
+  border: 2px solid var(--clr-primary);
+  border-radius: 50%;
+  overflow: hidden;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-circle img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 0.3rem;
+}
+
+.student-name {
+  font-weight: bold;
+  color: var(--clr-primary);
+  font-size: 0.95rem;
+  margin: 0.2rem 0;
+}
+
+.testimonial-text {
+  font-size: 0.8rem;
+  color: #555;
+  text-align: center;
+  padding: 0 0.2rem;
+}
+
+/* Styles généraux promo */
+.temoignages-promo {
+  text-align: center;
+  margin: 3rem 0 2rem;
+}
+
+.temoignages-promo h3 {
+  font-size: 1.8rem;
+  color: var(--clr-primary);
+  margin-bottom: 1rem;
+}
+
+.temoignages-promo p {
+  max-width: 800px;
+  margin: 0 auto;
+  color: #333;
+  font-size: 1rem;
+}
+
+/* Carrousel horizontal */
+.carousel {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 1.5rem;
+  width: calc(250px * 4 + 1.5rem * 3); /* largeur totale */
+  animation: scroll 20s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.testimonial-card {
+  flex: 0 0 250px;
+  background-color: var(--clr-light);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 1rem;
+}
+
+.testimonial-card img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 0.5rem;
+}
+
+.testimonial-card .student-name {
+  font-weight: bold;
+  color: var(--clr-primary);
+  margin: 0.3rem 0;
+}
+
+.testimonial-card .testimonial-text {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  body {
+    width: 100%;
+  }
+  .navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+  .hero-overlay {
+    text-align: center;
+  }
+  .formations-cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+  .container-footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* 
+@media screen and (max-width: 768px) {
+  body {
+    width: 100%;
+  }
+  .navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+  .container-footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+} 
+  */

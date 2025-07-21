@@ -1,274 +1,241 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
-  <head>
+<head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="laplateforme.css" />
-    <title>La Plateforme</title>
-  </head>
-  <body> 
-    <header>
-      <div class="notif">
-        <div>
-          <img
-            src="https://magma-pictures-production.s3.eu-west-3.amazonaws.com/br2ns6GYvMGgX13pPkWcK"
-            alt=""
-          />
-          <img
-            src="https://magma-pictures-production.s3.eu-west-3.amazonaws.com/R8pindfMgh04HgLqZ1PYx"
-            alt=""
-          />
-          <img
-            src="https://magma-pictures-production.s3.eu-west-3.amazonaws.com/vvHAkQ-AHUu7jkZbmAl8B"
-            alt=""
-          />
-        </div>
-        <p>Echanger avec un étudiant</p>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="16"
-          height="16"
-          fill="currentColor"
-          class="bi bi-x-lg"
-          viewBox="0 0 16 16"
-        >
-          <path
-            d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"
-          />
-        </svg>
-      </div>
-      <div class="nav-version-pc">
-        <div class="navbar">
-          <div class="logo">
-            <a href="accueil.html">
-              <img
-                src="https://laplateforme.io/wp-content/uploads/2024/02/logo-laplateforme-2024.png"
-                alt=""
-                srcset=""
-              />
-            </a>
-          </div>
-          <svg
-            class="hidden"
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
-            fill="currentColor"
-            class="bi bi-list"
-            viewBox="0 0 16 16"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
-            />
-          </svg>
-        </div>
-        <nav class="block-link">
-          <div class="info-link show">
-            <ul>
-              <li>
-                <a href="ai-school.html">Ai School</a
-                ><svg
-                  class="hidden"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  class="bi bi-arrow-right-circle"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"
-                  />
-                </svg>
-              </li>
-              <li>
-                <a href="coding-school.html">Coding</a
-                ><svg
-                  class="hidden"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  class="bi bi-arrow-right-circle"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"
-                  />
-                </svg>
-              </li>
-              <li>
-                <a href="cyber-security-school.html">Cybersecurity</a
-                ><svg
-                  class="hidden"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  class="bi bi-arrow-right-circle"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"
-                  />
-                </svg>
-              </li>
-              <li>
-                <a href="executive-education.html">Education</a
-                ><svg
-                  class="hidden"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  class="bi bi-arrow-right-circle"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"
-                  />
-                </svg>
-              </li>
-              <li>
-                <a href="Innovation-Lab.html">Lab</a
-                ><svg
-                  class="hidden"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  class="bi bi-arrow-right-circle"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"
-                  />
-                </svg>
-              </li>
-              <li>
-                <a href="qui-sommes-nous.html">Qui Sommes Nous?</a
-                ><svg
-                  class="hidden"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  class="bi bi-arrow-right-circle"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"
-                  />
-                </svg>
-              </li>
-              <li>
-                <a href="contact.html">Contact</a
-                ><svg
-                  class="hidden"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  class="bi bi-arrow-right-circle"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"
-                  />
-                </svg>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </div>
-    </header>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://kit.fontawesome.com/0434a55b44.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="images/png" href="Images/favicon.png">
+    <title>Accueil</title>
+    <link rel="stylesheet" href="accueil-contact.css">
+</head>
+<body>
+
+<header>
+  <nav class="navbar">
+     <div class="div-logo">
+      <a href="accueil.html" >
+      <img class="logo-footer" src="https://laplateforme.io/wp-content/uploads/2024/02/Fichier-1.svg" alt="Logo La Plateforme">
+      </a>
+    </div>
+    <ul>
+      <li><a href="accueil.html">Accueil</a></li>
+      <li><a href="qui-sommes-nous.html" >Qui Sommes Nous ?</a></li>
+      <li class="liste">
+        <a href="#">Formations ▾</a>
+
+        <!-- liste déroulante -->
+        <ul class="menu-deroulant">
+          <li><a href="ai-school.html">AI Shool</a></li>
+          <li><a href="coding-school.html">Coding Shool</a></li>
+          <li><a href="cyber-security-shool.html">Cyber Security Shool</a></li>
+          <li><a href="executive-education.html" >Executive Education</a></li>
+          <li><a href="Innovation-Lab.html">Innovation Lab</a></li>
+        </ul>
+      
+    </li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+
     <main>
-      <section class="text">
-        <h1>La grande école du numérique pour tous !</h1>
-        <p>
-          Des parcours de formations d’excellence en informatique aux frais de
-          scolarité accessibles, ouverts à tous les talents, sans conditions de
-          ressources et de diplômes.
-        </p>
-        <p>
-          Un lieu de rencontre entre entreprises et apprenants pour le bénéfice
-          de tous !
-        </p>
-        <p>Le digital c’est maintenant !</p>
-        <button>TESTS DE SÉLECTION & PRÉ-INSCRIPTIONS</button>
-        <div class="brochure">
-          <a href="#"
-            ><img
-              src="https://laplateforme.io/wp-content/uploads/2024/02/brochure.png"
-              alt=""
-            />Télécharger la Brochure</a
-          >
-          <a href="#">
-            <img
-              src="https://laplateforme.io/wp-content/uploads/2024/02/carte.png"
-              alt=""
-            />
-            Journées Portes Ouvertes</a
-          >
-          <a href="#">
-            <img
-              src="https://laplateforme.io/wp-content/uploads/2024/02/bulletin-1.png"
-              alt=""
-            />
-            S’inscrire à la Newsletter</a
-          >
-        </div>
-      </section>
-      <article>
-        <img
-          src="https://laplateforme.io/wp-content/uploads/2021/07/HP_visual_light.jpg"
-          alt=""
-        />
-      </article>
+
+
+        <section>
+
+            <header>
+                <h2 class="site-title2">Les News du Jour</h2>
+            </header>
+<article>
+    <h3>Top 5 des métiers du web qui recrutent en 2025</h3>
+
+    <h4>1. Développeur Web et Mobile</h4>
+
+    <h4>2. Spécialiste en Cybersécurité</h4>
+
+    <h4>3. UX/UI Designer</h4>
+
+    <h4>4. Traffic Manager / Expert SEO-SEA</h4>
+
+    <h4>5. Data Analyst</h4>
+    
+    <aside>
+        <p><strong>Sources :</strong> Études emploi 2025, observatoires des métiers du numérique.</p>
+    </aside>
+</article>
+
+            <article>
+                
+<!-- .hero-banner : le conteneur de la bannière (images ou slider) --> 
+<section class="hero-banner">  
+  <div class="slider">
+    <div class="slide">
+      <img src="Images/remise_diplome.jpg" alt="Slide 1">
+    </div>
+    <div class="slide">
+      <img src="Images/remise_diplome2.jpg" alt="Slide 2">
+    </div>
+    <div class="slide">
+      <img src="Images/remise_diplome3.jpg" alt="Slide 3">
+    </div>
+  </div>
+<!--.hero-overlay : le calque vient se superposer pour afficher un texte lisible --> 
+  <div class="hero-overlay">
+                    <h1 class="site-title"> Remise de Diplômes de Nos Apprenants </h1>
+                    <p>Venez nous Rejoindre</p>
+                    
+                </div>
+</section>
+
+
+            </article>
+        </section>
+
+  </div>
+</section>
+
+        <section class="Partenaire">
+          <h2>Nos Partenaires</h2>
+          <div class="logos">
+
+            <a href="https://www.credit-agricole.fr/" target="_blank">
+            <img class = "logo" src = "Images/creditA.png"></a>
+            
+            <a href="https://www.amazon.fr/" target="_blank">
+             <img class = "logo" src = "Images/amazon.svg"></a>
+             
+             <a href="https://fr.ze-box.io/" target="_blank">
+             <img class = "logo" src = "Images/zebox.png"></a>
+             
+             <a href="https://www.icade.fr/" target="_blank">
+             <img class = "logo" src = "Images/icade.png"></a>
+             
+             <a href="https://www.nge.fr/" target="_blank">
+             <img class = "logo" src = "Images/nge.svg.png"></a>
+             
+             <a href="https://www.cmacgm-group.com/fr/fondation/nos-actions" target="_blank">
+             <img class = "logo" src = "Images/fondationcma.png"></a>
+             
+             <a href="https://www.foselev.com/" target="_blank">
+             <img class = "logo" src = "Images/foselev.png"></a>
+             
+             <a href="https://www.orange.fr/portail" target="_blank">
+             <img class = "logo" src = "Images/orange.png"></a>
+            
+             <a href="https://www.marbour.eu/" target="_blank">
+             <img class = "logo" src = "Images/marbour.png"></a>
+            
+             <a href="https://www.maregionsud.fr/" target="_blank">
+            <img class = "logo" src = "Images/regionsud.jpg"></a>
+          
+            </div>
+        </section>
+
     </main>
+
+
     <footer>
-      <img src="logo-footer.png" alt="" />
-      <nav>
-        <div class="info-link">
-          <ul class="ul-footer">
-            <li>
-              <a href="ai-school.html">Ai School</a>
-            </li>
-            <li>
-              <a href="coding-school.html">Coding</a>
-            </li>
-            <li>
-              <a href="cyber-security-school.html">Cybersecurity</a>
-            </li>
-            <li>
-              <a href="executive-education.html">Education</a>
-            </li>
-            <li>
-              <a href="Innovation-Lab.html">Lab</a>
-            </li>
-            <li>
-              <a href="qui-sommes-nous.html">Qui Sommes Nous?</a>
-            </li>
-            <li>
-              <a href="contact.html">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </footer>
-  </body>
+  <div class="container-footer">
+    <!-- div 1 -->
+    <div class="logo-button">
+    <div class="div-logo">
+      <a href="accueil.html">
+      <img class="logo-footer" src="https://laplateforme.io/wp-content/uploads/2024/02/Fichier-1.svg" alt="Logo La Plateforme">
+      </a>
+    </div>
+    <div class="reseaux-footer">
+          <a href="https://www.facebook.com/LaPlateformeIO" target="_blank">
+            <i class="fa-brands fa-square-facebook fa-2xl"></i>
+          </a>
+  
+          <a href="https://www.instagram.com/" target="_blank">
+            <i class="fa-brands fa-square-instagram fa-2xl"></i>
+          </a>
+
+          <a href="https://www.linkedin.com/school/laplateformeio/" target="_blank">
+            <i class="fa-brands fa-linkedin fa-2xl"></i>
+          </a>
+       
+          <a href="https://x.com/LaPlateformeIO" target="_blank">
+             <i class="fa-brands fa-square-twitter fa-2xl"></i>
+          </a>
+          <a href="https://www.youtube.com/c/LaPlateformeIO" target="_blank">
+            <i class="fa-brands fa-square-youtube fa-2xl"></i>
+          </a>
+        
+    </div>
+    <div>
+      <button class="button-blanc"><a href="https://recrutement.laplateforme.io/" class="button-equipe" target="_blank">Rejoignez nos équipes</a></button>
+    </div>
+    <div>
+      <button class="button-red"><a href="https://laplateforme.io/telechargement-brochure/" class="button-footer" target="_blank">Télécharger la brochure</a></button>
+    </div>
+    </div>
+
+    <!-- div 2 -->
+    <div class="la-plateforme">
+      <div>
+        <h4 class="h4-footer">La Plateforme</h4>
+      </div>
+      <div class="lien-plateforme">
+        <p class="a-plateforme">
+        <a href="accueil.html" class="a-plateforme">Accueil</a><br>
+        </p>
+        <p>
+        <a href="qui-sommes-nous.html" class="a-plateforme">Qui sommes nous ?</a>
+        </p>
+       
+      </div>
+    </div>
+
+    <!-- div 3 -->
+    <div class="les-formations">
+      <div> 
+        <h4 class="h4-footer">Les Formations</h4>
+      </div>
+      <div class="lien-plateforme">
+        <p class="a-plateforme">
+        <a href="ai-school.html" class="a-plateforme">AI Shool</a><br>
+        </p>
+        <p class="a-plateforme">
+        <a href="coding-school.html" class="a-plateforme">Coding Shool</a><br>
+        </p>
+        <p class="a-plateforme">
+        <a href="cyber-security-shool.html" class="a-plateforme" >Cyber Security Shool</a><br>
+        </p>
+        <p class="a-plateforme">
+        <a href="executive-education.html" class="a-plateforme" >Executive Education</a><br>
+        </p>
+        <p class="a-plateforme">
+        <a href="Innovation-Lab.html" class="a-plateforme">Innovation Lab</a>
+        </p>
+      </div>
+    </div>
+
+    <!-- div 4 -->
+    <div class="informations">
+        <h4 class="h4-footer">Informations</h4>
+      <div>
+        <p class="p-footer">8 rue d’hozier, 13002 Marseille</p><p class="p-footer">Tel : 04.84.89.43.69</p>
+      </div>
+      <div>
+        <button class="button-contact"><a href="contact.html" class="contact-lien">Contact</a></button>
+      </div>
+      <div>
+        <img src="Images/April.svg" class="logo-april" alt="Logo April">
+      </div>
+    </div>
+
+  </div>
+  <div class="footer-noir">
+      <p>© La Plateforme -  Établissement d'enseignement supérieur technique privé  
+        - Tous droits réservés. | Mentions légales | Cookies | Conditions générales 
+        de vente | Référent handicap : Christine Yorillo</p>
+    </div>
+</footer>
+
+ 
+
+</body>
 </html>

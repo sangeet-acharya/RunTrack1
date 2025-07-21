@@ -1,0 +1,480 @@
+/* Page Acceuil design */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.6;
+  color: var(--clr-text);
+  background: var(--clr-bg-main);
+}
+
+:root {
+  /* base couleur*/
+  --clr-bg-main: #f4f6fb;
+  --clr-primary: hsl(
+    210,
+    84%,
+    50%
+  ); /* couleur principale (boutons, titres...) */
+  --clr-primary-dark: #00386e;
+  --clr-text: #0e0d0d;
+  --clr-light: #fff; /* blanc (titres, liens...) */
+}
+/* header ici */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav .liste {
+  position: relative;
+}
+
+/* La sous-liste est cachée au départ */
+nav .menu-deroulant {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: var(--clr-primary);
+  padding: 0.5rem 0;
+  border-radius: 0 0 6px 6px;
+  min-width: 200px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+  list-style: none;
+}
+
+/* Les liens de la sous-liste */
+nav .menu-deroulant li a {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: var(--clr-light);
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+nav .menu-deroulant li a:hover {
+  background-color: var(--clr-primary-dark);
+} /* fond devient foncé quand la souris survole le nom de la formation*/
+
+/* Affiche la sous-liste quand on survole "Formations" */
+/* la sous‑liste à l’intérieur de <li class="liste"> quand cet élément est survolé */
+/*• .liste → on vise le <li class="liste">.
+• :hover → quand la souris est dessus.*/
+nav .liste:hover .menu-deroulant,
+nav .liste:focus-within .menu-deroulant {
+  display: block;
+}
+
+/* — Bandeau + coins arrondis — */
+.hero-banner {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* banière principale + news du jour + actu */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 3rem;
+}
+
+.logo_plateforme {
+  position: absolute;
+  left: 1rem;
+  width: 65px;
+  height: auto;
+}
+
+/* Titre centré */
+.site-title {
+  margin: 0 auto;
+  font-size: 1.8rem;
+  color: var(--clr-light);
+}
+
+/*header : fond et couleur du texte de l’en-tête avec un peu de marge intérieure*/
+header {
+  background: var(--clr-primary);
+  color: var(--clr-light);
+  padding: 3rem;
+}
+
+/*header h1 : titre centré avec taille et marge en dessous */
+header h1 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+/* Navigation principale */
+nav ul {
+  /* organiser les liens de navigation en liste propre et structurée. */
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+  justify-content: center;
+}
+
+/* code définit l’apparence des liens dans la navigation*/
+nav a {
+  color: var(--clr-light);
+  text-decoration: none;
+  font-weight: 600;
+  padding-bottom: 0.2rem;
+  transition: border-color 0.3s;
+}
+
+/*style s’applique quand on passe la souris sur un lien(bordure..)  */
+nav a:hover,
+nav a:focus-visible {
+  border-bottom: 2px solid var(--clr-light);
+  outline: none;
+}
+
+/* jusqu'ici header*/
+
+/* footer ici */
+.container-footer {
+  background-color: rgb(51, 50, 50);
+  display: flex;
+  justify-content: space-between;
+  padding: 6%;
+}
+.logo-footer {
+  width: 280px;
+}
+.logo-header {
+  width: 20%;
+  margin-right: 700px;
+}
+.reseaux-footer {
+  margin: 10%;
+}
+i {
+  color: white;
+  margin: 1%;
+}
+.button-blanc {
+  margin-top: 8%;
+  padding: 2%;
+  padding-right: 11%;
+  padding-left: 11%;
+  font-weight: 600;
+  border: none;
+}
+.button-equipe {
+  text-decoration: none;
+  color: black;
+}
+.button-red {
+  background-color: #e74a34;
+  padding: 2%;
+  padding-right: 10%;
+  padding-left: 10%;
+  margin-top: 5%;
+  border: none;
+  font-weight: 600;
+}
+.button-footer {
+  text-decoration: none;
+  color: white;
+}
+.lien-plateforme {
+  gap: 5px;
+}
+.a-plateforme {
+  text-decoration: none;
+  color: white;
+  margin-bottom: 10px;
+}
+footer ul li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+.a-qsn {
+  text-decoration: none;
+  color: white;
+}
+.h4-footer {
+  color: white;
+  margin-bottom: 10%;
+}
+.p-footer {
+  color: white;
+  margin-bottom: 5%;
+}
+.button-contact {
+  margin-top: 8%;
+  padding: 2%;
+  padding-right: 11%;
+  padding-left: 11%;
+  font-size: larger;
+  background-color: #333232;
+  border: 2px solid;
+  color: white;
+}
+.contact-lien {
+  text-decoration: none;
+  color: white;
+}
+.logo-april {
+  margin-top: 20%;
+  width: 50%;
+}
+.footer-noir {
+  background-color: #000000;
+  color: #e9e9e9;
+  padding: 1%;
+  font-size: 0.8em;
+}
+/* footer jusqu'ici */
+
+.site-title {
+  color: var(--clr-light);
+}
+
+.site-title2 {
+  color: var(--clr-light);
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-align: left;
+  margin-top: 0.1rem;
+}
+
+/* — Bandeau + coins arrondis — */
+.hero-banner {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* conteneur qui fait défiler les slides */
+.slider {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  animation: slide 30s linear infinite;
+}
+/* taille minimale d’une diapositive */
+.slide {
+  min-width: 100%;
+  height: 120%;
+  margin: 0;
+}
+
+/* image qui remplit et recadre la diapositive  */
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-fit: cover;
+  display: block;
+  background-color: black;
+}
+
+/*  Animation  slides */
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  33% {
+    transform: translateX(-100%);
+  }
+  66% {
+    transform: translateX(-200%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* rend l'écriture lisible carrousel + supperposit° calque sur slides— */
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(75, 74, 74, 0.4);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(248, 250, 254);
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+/* Logo de Nos Partenaires */
+.logo {
+  width: 200px;
+  height: auto;
+}
+
+.logos {
+  display: flex;
+  flex-wrap: wrap; /* permet logo a chaques lignes */
+  gap: 2.5rem; /* espace entre chaque logo */
+}
+
+/* main : zone principale centrée avec largeur max et marges */
+main {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+/* section : espace sous chaque section*/
+section {
+  margin-bottom: 2.5rem;
+}
+
+section > header h2 {
+  font-size: 1.5rem;
+  color: var(--clr-primary-dark);
+  margin-bottom: 1rem;
+}
+
+/* ─ Articles  = regroupe le titre, la liste des 5 métiers(h4) */
+article {
+  background: var(--clr-light);
+  border-radius: 8px;
+  padding: 1.2rem 1.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+  margin-bottom: 1.5rem;
+}
+article {
+  color: #000;
+}
+article h3 {
+  color: var(--clr-primary);
+  margin-bottom: 0.5rem;
+}
+
+/* Contenu annexe = sources de news du jour */
+aside {
+  margin-top: 0.8rem;
+  padding: 0.8rem 1rem;
+  background: rgba(0, 96, 193, 0.08);
+  border-left: 4px solid var(--clr-primary);
+  font-size: 0.9rem;
+  border-radius: 4px;
+}
+
+/* Page Contact design */
+
+.contact-page {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1rem;
+  color: #235587;
+}
+
+form {
+  background: rgb(255, 255, 255);
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(52, 17, 17, 0.1);
+}
+
+fieldset {
+  border: 1px solid #ababf3;
+  padding: 1rem;
+  border-radius: 6px;
+}
+
+legend {
+  font-weight: bold;
+  color: #235587;
+  padding: 0 0.5rem;
+}
+
+label {
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: 0.3rem;
+  font-weight: 600;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  resize: vertical;
+}
+
+.check.case {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+  gap: 0.5rem;
+}
+
+/* Quand l’écran fait 600 px de large ou moins, 
+on espace uniformément les liens du menu, on réduit et centre le titre du header, 
+et on met moins de padding dans les articles pour gagner de la place.*/
+
+@media screen and (max-width: 768px) {
+  body {
+    width: 100%;
+  }
+  .navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+  .Partenaire {
+    text-align: center;
+  }
+  .logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  nav ul {
+    justify-content: space-around;
+  }
+  header h1 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  article {
+    padding: 1rem;
+  }
+  .container-footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+}
