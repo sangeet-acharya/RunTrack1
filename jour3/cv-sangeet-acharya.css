@@ -27,7 +27,7 @@ section {
   font-size: 16px;
   cursor: pointer;
   animation-name: slide;
-  animation-duration: 5s;
+  animation-duration: 15s;
   animation-iteration-count: infinite;
 }
 @keyframes slide {
@@ -35,8 +35,6 @@ section {
   }
   50% {
     scale: 2;
-  }
-  75% {
   }
   100% {
     transform: translateX(100%);
